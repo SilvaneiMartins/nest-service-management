@@ -7,6 +7,7 @@ import { PrismaService } from "./prisma/prisma.service";
 
 import { AuthenticatedController } from "./controllers/authenticated.controller";
 import { CreateAccountController } from "./controllers/create-account.controller";
+import { CreateQuestionsController } from "./controllers/create-question.controller";
 
 @Module({
     imports: [
@@ -16,7 +17,11 @@ import { CreateAccountController } from "./controllers/create-account.controller
         }),
         AuthModule,
     ],
-    controllers: [CreateAccountController, AuthenticatedController],
+    controllers: [
+        CreateAccountController,
+        AuthenticatedController,
+        CreateQuestionsController,
+    ],
     providers: [PrismaService],
     exports: [],
 })
