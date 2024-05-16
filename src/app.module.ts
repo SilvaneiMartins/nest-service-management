@@ -8,6 +8,7 @@ import { PrismaService } from "./prisma/prisma.service";
 import { AuthenticatedController } from "./controllers/authenticated.controller";
 import { CreateAccountController } from "./controllers/create-account.controller";
 import { CreateQuestionsController } from "./controllers/create-question.controller";
+import { FetchRecentQuestionsController } from "./controllers/fetch-recent-questions.controller";
 
 @Module({
     imports: [
@@ -21,6 +22,7 @@ import { CreateQuestionsController } from "./controllers/create-question.control
         CreateAccountController,
         AuthenticatedController,
         CreateQuestionsController,
+        FetchRecentQuestionsController,
     ],
     providers: [PrismaService],
     exports: [],
