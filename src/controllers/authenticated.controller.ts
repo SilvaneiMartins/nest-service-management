@@ -1,28 +1,52 @@
 import { z } from "zod";
 import { JwtService } from "@nestjs/jwt";
-import { UsePipes } from "@nestjs/common";
+import { UnauthorizedException, UsePipes } from "@nestjs/common";
 import { Body, Controller, HttpCode, Post } from "@nestjs/common";
 
 import { PrismaService } from "src/prisma/prisma.service";
 import { ZodValidationPipe } from "src/pipes/zod-validation-pipe";
+import { compare } from "bcryptjs";
 
-// const authenticatedBodySchema = z.object({
-//     name: z.string(),
-//     email: z.string().email(),
-//     password: z.string(),
-// });
+const authenticatedBodySchema = z.object({
+    email: z.string().email(),
+    password: z.string(),
+});
 
-// type AuthenticatedBodySchema = z.infer<typeof authenticatedBodySchema>;
+type AuthenticatedBodySchema = z.infer<typeof authenticatedBodySchema>;
 
 @Controller("/sessions")
 export class AuthenticatedController {
-    constructor(private jwt: JwtService) {}
+    constructor(
+        private prisma: PrismaService,
+        private jwt: JwtService,
+    ) {}
 
     @Post()
     // @HttpCode(201)
-    // @UsePipes(new ZodValidationPipe(authenticatedBodySchema))
-    async handle() {
-        const token = this.jwt.sign({ sub: "user-id" });
-        return token;
+    @UsePipes(new ZodValidationPipe(authenticatedBodySchema))
+    async handle(@Body() body: AuthenticatedBodySchema) {
+        const { email, password } = body;
+
+        const user = await this.prisma.user.findUnique({
+            where: {
+                email,
+            },
+        });
+
+        if (!user) {
+            throw new UnauthorizedException("User credentials do not match.");
+        }
+
+        const isPasswordValid = await compare(password, user.password);
+
+        if (!isPasswordValid) {
+            throw new UnauthorizedException("User credentials do not match.");
+        }
+
+        const accessToken = this.jwt.sign({ sub: user.id });
+
+        return {
+            access_token: accessToken,
+        };
     }
 }
