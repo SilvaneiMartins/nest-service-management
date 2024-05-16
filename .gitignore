@@ -43,6 +43,12 @@ data
 .env.production.local
 .env.local
 
+chave_privada_base64.txt
+chave_publica_base64.txt
+
+private.pem
+public.pem
+
 # temp directory
 .temp
 .tmp
