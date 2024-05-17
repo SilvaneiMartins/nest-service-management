@@ -114,6 +114,16 @@ Nest é um projeto de código aberto licenciado pelo MIT. Pode crescer graças a
 
 Este projeto é licenciado sob [CC0 1.0 Universal]. Consulte o arquivo [LICENSE](https://github.com/SilvaneiMartins/nest-service-management/blob/master/LICENSE) para obter detalhes.
 
+## Como contribuir com o projeto
+
+Se você deseja contribuir para este projeto, siga estas etapas:
+
+    🔹 Faça um fork deste repositório
+    🔹 Crie uma nova branch (git checkout -b feature/)
+    🔹 Faça commit de suas alterações (git commit -am 'Adicionar nova funcionalidade')
+    🔹 Faça push para a branch (git push origin feature/)
+    🔹 Crie um novo Pull Request
+
 ## Desenvolvedor
 
 <a href="https://github.com/SilvaneiMartins">
