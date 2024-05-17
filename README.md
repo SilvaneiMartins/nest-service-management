@@ -79,7 +79,7 @@ $ yarn run test:e2e
 $ yarn run test:cov
 ```
 
-## Credito do projeto nestjs
+## Credito projeto nest
 
 #### Suporte do framework
 
@@ -91,11 +91,11 @@ Nest é um projeto de código aberto licenciado pelo MIT. Pode crescer graças a
 -   Website - [https://nestjs.com](https://nestjs.com/)
 -   Twitter - [@nestframework](https://twitter.com/nestframework)
 
-## Licença
+## Licença projeto
 
 Este projeto é licenciado sob [CC0 1.0 Universal]. Consulte o arquivo [LICENSE](https://github.com/SilvaneiMartins/nest-service-management/blob/master/LICENSE) para obter detalhes.
 
-## Informações do desenvolvedor
+## Desenvolvedor
 
 <a href="https://github.com/SilvaneiMartins">
     <img
