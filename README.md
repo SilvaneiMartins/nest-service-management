@@ -8,6 +8,10 @@
     Tipo: API
 </h2>
 
+<h3 align="center">
+    🚀 PROJETO EM ANDAMENTO 🚀
+</h3>
+
 [circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
 [circleci-url]: https://circleci.com/gh/nestjs/nest
 
