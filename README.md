@@ -37,6 +37,10 @@
     <br />
 </p>
 
+## Descrição projeto nest GitHub
+
+[Nest](https://github.com/nestjs/nest) repositório inicial TypeScript da estrutura.
+
 ## Clonar o projeto
 
 ```bash
@@ -46,10 +50,6 @@
     # Entre no Diretório:
     cd nest-service-management
 ```
-
-## Descrição projeto nest GitHub
-
-[Nest](https://github.com/nestjs/nest) repositório inicial TypeScript da estrutura.
 
 ## Executar o banco no container (DOCKER)
 
