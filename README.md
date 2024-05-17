@@ -37,24 +37,6 @@
     <br />
 </p>
 
-## Descrição projeto nest GitHub
-
-[Nest](https://github.com/nestjs/nest) repositório inicial TypeScript da estrutura.
-
-## Executar o banco no container (DOCKER)
-
-```bash
-    # comando para criar container
-    $ docker-compose up -d
-```
-
-## Executar o prisma
-
-```bash
-    # gerar as tabelas no banco de dados
-    $ npx prisma migrate dev
-```
-
 ## Clonar o projeto
 
 ```bash
@@ -63,6 +45,25 @@
 
     # Entre no Diretório:
     cd nest-service-management
+```
+
+## Descrição projeto nest GitHub
+
+[Nest](https://github.com/nestjs/nest) repositório inicial TypeScript da estrutura.
+
+## Executar o banco no container (DOCKER)
+
+```bash
+    # comando para criar container
+    # obs. tem que esta na raiz do projeto
+    $ docker-compose up -d
+```
+
+## Executar o prisma
+
+```bash
+    # gerar as tabelas no banco de dados
+    $ npx prisma migrate dev
 ```
 
 ## Instalar dependências
