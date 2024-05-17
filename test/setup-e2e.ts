@@ -1,4 +1,5 @@
-import "dotenv/config";
+import { config } from "dotenv"
+config()
 
 import { randomUUID } from "node:crypto";
 import { PrismaClient } from "@prisma/client";
@@ -8,26 +9,25 @@ const prisma = new PrismaClient();
 
 function generateUniqueDatabaseURL(schemaId: string) {
     if (!process.env.DATABASE_URL) {
-        throw new Error("Please provider a DATABASE_URL environment variable.");
+        throw new Error('Please provider a DATABASE_URL environment variable')
     }
 
-    const url = new URL(process.env.DATABASE_URL);
+    const url = new URL(process.env.DATABASE_URL)
 
-    url.searchParams.set("schema", schemaId);
-    return url.toString();
+    url.searchParams.set('schema', schemaId)
+
+    return url.toString()
 }
 
-const schemaId = randomUUID();
+const schemaId = randomUUID()
 
 beforeAll(async () => {
-    const databaseURL = generateUniqueDatabaseURL(schemaId);
-    process.env.DATABASE_URL = databaseURL;
-    execSync("yarn prisma migrate deploy");
-});
+    const databaseURL = generateUniqueDatabaseURL(schemaId)
+    process.env.DATABASE_URL = databaseURL
+    execSync('yarn prisma migrate deploy')
+})
 
-beforeEach(async () => {
-    await prisma.$executeRawUnsafe(
-        `DROP SCHEMA IF EXISTS "${schemaId}" CASCADE`,
-    );
+afterAll(async () => {
+    await prisma.$executeRawUnsafe(`DROP SCHEMA IF EXISTS "${schemaId}" CASCADE`)
     await prisma.$disconnect()
-});
+})
