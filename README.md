@@ -11,7 +11,7 @@
 [circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
 [circleci-url]: https://circleci.com/gh/nestjs/nest
 
-  <p align="center">Um progressista <a href="http://nodejs.org" target="_blank">Node.js</a> estrutura para construir aplicativos do lado do servidor eficientes e escaláveis.</p>
+  <p align="center">Uma aplicação fantástica como o <a href="http://nodejs.org" target="_blank">Node.js</a> estrutura para construir aplicativos do lado do servidor eficientes e escaláveis.</p>
     <p align="center">
 <a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
 <a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
@@ -81,19 +81,17 @@ $ yarn run test:cov
 
 ## Credito do projeto nestjs
 
-### Suporte do framework
+#### Suporte do framework
 
 Nest é um projeto de código aberto licenciado pelo MIT. Pode crescer graças aos patrocinadores e ao apoio de patrocinadores incríveis. Se você quiser se juntar a eles, por favor [leia mais aqui](https://docs.nestjs.com/support).
 
-### Manter contato
+#### Manter contato
 
 -   Autor - [Kamil Myśliwiec](https://kamilmysliwiec.com)
 -   Website - [https://nestjs.com](https://nestjs.com/)
 -   Twitter - [@nestframework](https://twitter.com/nestframework)
 
 ## Licença
-
-Nest is [MIT licensed](LICENSE).
 
 Este projeto é licenciado sob [CC0 1.0 Universal]. Consulte o arquivo [LICENSE](https://github.com/SilvaneiMartins/nest-service-management/blob/master/LICENSE) para obter detalhes.
 
