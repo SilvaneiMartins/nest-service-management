@@ -2,10 +2,16 @@
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
 </p>
 
+<h2 align="center">
+    Service Management <br />
+    Framework: Nest <br />
+    Tipo: API
+</h2>
+
 [circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
 [circleci-url]: https://circleci.com/gh/nestjs/nest
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
+  <p align="center">Um progressista <a href="http://nodejs.org" target="_blank">Node.js</a> estrutura para construir aplicativos do lado do servidor eficientes e escaláveis.</p>
     <p align="center">
 <a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
 <a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
@@ -19,20 +25,35 @@
     <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
   <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
 </p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
-## Description
+## Imagem do projeto
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+<p align="center">
+    <a href="https://imgur.com/JTjKkVZ"><img src="https://i.imgur.com/JTjKkVZ.png" title="source: imgur.com" /></a>
+    <br />
+</p>
 
-## Installation
+## Descrição projeto nest GitHub
+
+[Nest](https://github.com/nestjs/nest) repositório inicial TypeScript da estrutura.
+
+## Clonar o projeto
+
+```bash
+    # Clone o Repositório:
+    $ git clone https://github.com/SilvaneiMartins/nest-service-management
+
+    # Entre no Diretório:
+    cd nest-service-management
+```
+
+## Instalar dependências
 
 ```bash
 $ yarn install
 ```
 
-## Running the app
+## Executar o projeto
 
 ```bash
 # development
@@ -45,7 +66,7 @@ $ yarn run start:dev
 $ yarn run start:prod
 ```
 
-## Test
+## Executar os test
 
 ```bash
 # unit tests
@@ -58,16 +79,35 @@ $ yarn run test:e2e
 $ yarn run test:cov
 ```
 
-## Support
+## Credito do projeto nestjs
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
+### Suporte do framework
 
-## Stay in touch
+Nest é um projeto de código aberto licenciado pelo MIT. Pode crescer graças aos patrocinadores e ao apoio de patrocinadores incríveis. Se você quiser se juntar a eles, por favor [leia mais aqui](https://docs.nestjs.com/support).
 
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
+### Manter contato
 
-## License
+-   Autor - [Kamil Myśliwiec](https://kamilmysliwiec.com)
+-   Website - [https://nestjs.com](https://nestjs.com/)
+-   Twitter - [@nestframework](https://twitter.com/nestframework)
+
+## Licença
 
 Nest is [MIT licensed](LICENSE).
+
+Este projeto é licenciado sob [CC0 1.0 Universal]. Consulte o arquivo [LICENSE](https://github.com/SilvaneiMartins/nest-service-management/blob/master/LICENSE) para obter detalhes.
+
+## Informações do desenvolvedor
+
+<a href="https://github.com/SilvaneiMartins">
+    <img
+        style="border-radius:50%"
+        src="https://github.com/SilvaneiMartins.png"
+        width="100px;"
+        alt="Silvanei Martins"
+    />
+    <br />
+    <sub>
+        <b>Silvanei de Almeida Martins</b>
+    </sub>
+</a>
