@@ -41,6 +41,20 @@
 
 [Nest](https://github.com/nestjs/nest) repositório inicial TypeScript da estrutura.
 
+## Executar o banco no container (DOCKER)
+
+```bash
+    # comando para criar container
+    $ docker-compose up -d
+```
+
+## Executar o prisma
+
+```bash
+    # gerar as tabelas no banco de dados
+    $ npx prisma migrate dev
+```
+
 ## Clonar o projeto
 
 ```bash
