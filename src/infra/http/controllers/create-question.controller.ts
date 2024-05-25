@@ -18,7 +18,7 @@ const bodyValidationPipe = new ZodValidationPipe(createQuestionBodySchema);
 @Controller("/questions")
 @UseGuards(JwtAutGuard)
 export class CreateQuestionsController {
-    constructor(private createQuestions: CreateQuestionUseCase) { }
+    constructor(private createQuestions: CreateQuestionUseCase) {}
 
     @Post()
     async handle(
@@ -28,7 +28,7 @@ export class CreateQuestionsController {
         const { title, content } = body;
         const userId = user.sub;
 
-        const result = await this.createQuestions.execute({
+        await this.createQuestions.execute({
             title,
             content,
             authorId: userId,

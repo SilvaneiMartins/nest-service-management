@@ -33,5 +33,4 @@ import { QuestionsRepository } from "@/domain/forum/application/repositories/que
         PrismaQuestionAttachmentsARepository,
     ],
 })
-
-export class DatabaseModule { }
+export class DatabaseModule {}
